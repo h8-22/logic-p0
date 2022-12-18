@@ -3,6 +3,7 @@ function ladder(word){
     // console.log(wordArr);
     
     // create new array
+    console.log(word.length);
     for(let i = 0; i < word.length; i++){
         wordArr.push(word[i]);
     }
@@ -30,3 +31,4 @@ function ladder(word){
 }
 
 console.log(ladder('developer'));
+//problemnya stop di devel

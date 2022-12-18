@@ -71,7 +71,7 @@ for (let i = 1; i <= row7; i++) {
   }
   j = 0;
   while (j < i) {
-    temp += "*";
+    temp += "* ";
     j++;
   }
   console.log(temp);
