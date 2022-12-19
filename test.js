@@ -1,42 +1,45 @@
-// let word = 'developer'
-// let wordArr = [];
-// console.log(wordArr);
+var exercise = "<>";
+var userInput = "<>";
+let score = 99;
+let category;
 
-// create new array
-// for(let i = 0; i < word.length; i++){
-//     wordArr.push(word[i]);
-// }
-// console.log("sajfda",wordArr);
-
-// let newArr = [];
-// for(let j = 0; j < wordArr.length; j++){
-//     console.log(wordArr.length);
-//     let temp = [];
-//     for(let k = 0; k < wordArr.length; k++){
-//         temp.push(word[k]);
-//     }
-//     newArr.push(temp);
-//     console.log(`ini word ${wordArr}`);
-//     wordArr.pop();
-// }
-
-let dice = Math.ceil(Math.random() * 6);
-
-while (true){
-    console.log(dice);
-    if(dice === 6){
-        break;
-    } else {
-        dice = Math.ceil(Math.random() * 6);
+// Anda mendapatkan score 50 / 70. Persentase: 71%, Kategori : Good
+// console.log(exercise.length);
+// console.log(userInput.length);
+// console.log(exercise.length === userInput.lenght);
+if(exercise.length === userInput.length) {
+  for (let i = 0; i < exercise.length; i++) {
+    if (exercise[i] === userInput[i]) {
+      score += 10;
     }
+  }
+  //   console.log("test");
+  // }
+
+  let totalScore = (score / exercise.length) * 10;
+  console.log(totalScore);
+  if (totalScore == 100) {
+    category = "Perfect";
+  }
+  if (totalScore >= 80) {
+    category = "Great";
+  }
+  if (totalScore >= 60) {
+    category = "Good";
+  } else {
+    category = "Bad";
+  }
+
+  console.log(
+    `Anda mendapatkan score ${score} / ${
+      exercise.length * 10
+    }. Presentase ${Math.floor(totalScore)}, Kategori : ${category}`
+  );
+} else {
+    console.log("Input yang anda masukkan tidak lengkap!");
 }
 
-// console.log();
-for(;true;){
-    console.log(dice);
-    if(dice === 6){
-        break;
-    } else {
-        dice = Math.ceil(Math.random() * 6);
-    }
-}
+// let test = "Anda mendapatkan score 50 / 70. Persentase: 71%, Kategori : Good"
+// let result "Anda mendapatkan score 50 / 70. Presentase: 71%, Kategori : Good"
+
+// console.log(test === result)
