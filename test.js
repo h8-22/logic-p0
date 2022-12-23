@@ -44,8 +44,112 @@
 
 // // console.log(test === result)
 
-let obj = {};
-obj.test= 0;
-console.log(obj);
+// let obj = {};
+// obj.test= 0;
+// console.log(obj);
 
-console.log(obj.test === obj.test);
+// console.log(obj.test === obj.test);
+
+// let obj = Object;
+// console.log(obj);
+
+// console.log(1%5);
+// console.log(2%5);
+// console.log(3%5);
+// console.log(4%5);
+// console.log(5%5);
+
+// function boxOfAlphabet(row, col) {
+//     let result = [];
+//     let alphabet = 'abcdefgh';
+
+//     for (let i = 0; i < row.length; i++) {
+//         //result = [`];
+//         for (let j = 0; j < col.length; j++) {
+//             result.push(alphabet);
+
+//             //console.log(row[i][j]);
+//         }
+
+//     }
+//     return result;
+//  }
+
+//  console.log(boxOfAlphabet(2, 2))
+
+// function boxOfAlphabet(row, col) {
+//     let result = [];
+//     let alphabet = "abcdefghijklmnopqrstuvwxyz";
+//     let count = 0;
+
+//     for (let i = 0; i < row.lengtsh; i++) {
+//         //result = [];
+//         let temp = [];
+//         for (let j = 0; j < col.length; j++) {
+//             temp.push(alphabet[count])
+
+//             count++
+//         result.push(temp);
+//             //console.log(row[i][j]);
+//         }
+
+//     }
+
+//     return result;
+
+//  }
+
+//  console.log(boxOfAlphabet(2, 2))
+
+let data = ["idaz", "fajrin", "samir", "titus", "test", "abc", "tasdf"]
+// data.splice(2,2);
+
+let tempArr = [];
+
+console.log(data.length);
+// for (let i = 0; i < data.length; i++) {
+//     tempArr.push(data.pop())
+// }
+let counter = 0;
+while(counter < data.length){
+    console.log(counter);
+    tempArr.push(data.pop())
+    counter ++;
+}
+
+
+console.log(tempArr);
+console.log(data);
+
+
+
+
+
+
+
+
+
+
+// console.log(tempArr);
+
+// for (let i = 0; i < 2; i++) {
+//     tempArr.pop()
+// }
+
+// //LOOPING TAMBAH ARR
+// // for (let index = 0; index < array.length; index++) {
+// //     const element = array[index];
+    
+// // }
+
+// for (let i = 0; i < tempArr.length; i++) {
+//     data.push(tempArr[i])
+// }
+
+
+
+
+// let data2= ["idaz", "fajrin", "samir", "titus", "test", "abc", "tasdf"]
+// data2.splice(2,2)
+
+// console.log(data2);
