@@ -1,13 +1,23 @@
 function sorting(arrNumber) {
-    // code di 
-    for(let i = 0; i < arrNumber.length; i++){
-      // if(arrNumber)
+  // your code here
+  let flag = false;
+  while (!flag) {
+    flag = true;
+    for (let i = 0; i < arrNumber.length; i++) {
+      if (arrNumber[i - 1] > arrNumber[i]) {
+        flag = false;
+        let temp = arrNumber[i - 1];
+        arrNumber[i - 1] = arrNumber[i];
+        arrNumber[i] = temp;
+      }
     }
-    
   }
-  
+  return arrNumber;
+}
+  console.log(sorting([2, 8, 4, 6, 8, 5, 8, 4]));
   function getTotal(arrNumber) {
     // code di sini
+
   }
   
   function mostFrequentLargestNumbers(arrNumber) {
