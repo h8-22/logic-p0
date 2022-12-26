@@ -92,10 +92,52 @@
 //   var numbers = [12, 10, 15, 11, 14, 13, 16];
 //   bubbleSort(numbers);
 //   console.log(numbers);
-console.log("sdf");
+// console.log("sdf");
 
-console.log(typeof ("a"));
-console.log(typeof 2);
-console.log(typeof true);
+// console.log(typeof ("a"));
+// console.log(typeof 2);
+// console.log(typeof true);
 
-console.log(-10<5);
+// console.log(-10<5);
+
+// console.log(-60 > -50);
+
+// let b = " b"
+
+// console.log(!isNaN(b));
+
+function sorting(arrNumber) {
+    // code di sini
+    arrNumber.sort();
+    return arrNumber;
+}
+
+function getTotal(arrNumber) {
+    // code di sini
+    const newSorting = sorting(arrNumber);
+    let highest = newSorting[]
+    let count = 0;
+    if (arrNumber.length === 0) {
+        return ""
+    }
+    for (let i = 0; i < newSorting.length; i++) {
+        if (newSorting[i] > highest) {
+            highest = newSorting[i]
+        }
+    }
+    for (let j = 0; j < newSorting.length; j++) {
+        if (highest === newSorting[j]) {
+            count++
+        }
+    }
+    return `angka paling besar adalah ${highest} dan jumlah kemunculan sebanyak ${count} kali`
+}
+
+function mostFrequentLargestNumbers(arrNumber) {
+    var listSort = sorting(arrNumber);
+    var countHighest = getTotal(listSort);
+    return countHighest;
+}
+
+console.log(mostFrequentLargestNumbers([2, 8, 4, 6, 8, 5, 8, 4]));
+//'angka paling besar adalah 8 dan jumlah kemunculan sebanyak 3 kali'

@@ -5,7 +5,7 @@ function changeMe(arr){
         for(let j = 0; j< arr[i].length; j++){
             obj.firstname = arr[i][0];
             obj.lastName = arr[i][1];
-            obj. gender = arr[i][2]
+            objn.gender = arr[i][2]
             if(arr[i][3] === undefined || arr[i][3] ===""){
                 obj.age = "Invalid Birth Year";
             } else {

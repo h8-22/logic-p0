@@ -1,5 +1,10 @@
 function angkaPrima(angka) {
     // you can only write your code here!
+    if(angka % 2 !== 0 && angka % 3 !== 0 && angka % 5 !== 0 && angka % 2 !== 0 || angka === 3){
+      return true
+    } else {
+      return false;
+    }
     
   }
   
