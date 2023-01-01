@@ -1,12 +1,3 @@
-// let obj = {
-//     "1": 1
-// }
-
-// // console.log(obj.satu);
-// obj."1" ++;
-// console.log(obj);
-
-// console.log(Number("asd"));
 function manualSplit(str) {
     // Tulis kode disini
     let array = [];
@@ -27,6 +18,7 @@ function manualSplit(str) {
         temp = "";
         array.push(tempArray);
     }
+    console.log(array);
     return array;
 }
 function productSearch(arr, keyword) {
@@ -62,3 +54,4 @@ function productSearch(arr, keyword) {
 let products = ['minyak goreng', 'mie rebus', 'mie goreng', 'mie pedas', 'sirup jeruk', 'sirup mangga', 'kentang goreng', 'kentang goreng keju', 'keju slice', 'keju parut', 'keju krispi toping keju' ];
 // panggil function disini dan sesuaikan parameternya
 console.log(productSearch(products, 'keju'));
+
