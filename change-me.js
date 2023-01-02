@@ -3,9 +3,9 @@ function changeMe(arr){
         console.log(`${i+1}. ${arr[i][0], arr[i][1]}`);
         let obj = {};
         for(let j = 0; j< arr[i].length; j++){
-            obj.firstname = arr[i][0];
+            obj.firstName = arr[i][0];
             obj.lastName = arr[i][1];
-            objn.gender = arr[i][2]
+            obj.gender = arr[i][2]
             if(arr[i][3] === undefined || arr[i][3] ===""){
                 obj.age = "Invalid Birth Year";
             } else {

@@ -108,7 +108,7 @@ function startUpMatchMaking(arr) {
   } else {
     return "The job composition in the team is not suitable"
   }
-  return team;
+  // return team;
 }
 
 // console.log(splitJobcharacters("idaz-sfmutvi,fajrin-sfutqji,fika-sfldbi"));
