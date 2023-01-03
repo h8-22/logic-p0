@@ -63,9 +63,12 @@
 // // panggil function disini dan sesuaikan parameternya
 // console.log(productSearch(products, 'keju'));
 
-let a = "abc";
-let b = 123
+// let a = "abc";
+// let b = 123
 let c = {
     test: "asdfsa"
 }
-console.log(a+c);
+// console.log(a+c);
+
+
+console.log(c.hasOwnProperty("tesst"));
