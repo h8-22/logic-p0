@@ -1,74 +1,45 @@
-// // let obj = {
-// //     "1": 1
-// // }
+var exercise = "<>";
+var userInput = "<>";
+let score = 99;
+let category;
 
-// // // cle.log(obj.satu);
-// // obj."1" ++;
-// // console.log(obj);
+// Anda mendapatkan score 50 / 70. Persentase: 71%, Kategori : Good
+// console.log(exercise.length);
+// console.log(userInput.length);
+// console.log(exercise.length === userInput.lenght);
+if(exercise.length === userInput.length) {
+  for (let i = 0; i < exercise.length; i++) {
+    if (exercise[i] === userInput[i]) {
+      score += 10;
+    }
+  }
+  //   console.log("test");
+  // }
 
-// // console.log(Number("asd"));
-// function manualSplit(str) {
-//     // Tulis kode disini
-//     let array = [];
-//     let temp = "";
-//     let tempArray = [];
-//     for (let i = 0; i < str.length; i++) {
-//         tempArray = [];
-//         word = str[i];
-//         for (let j = 0; j < word.length; j++) {
-//             if (word[j] === " ") {
-//                 tempArray.push(temp);
-//                 temp = "";
-//             } else {
-//                 temp += word[j];
-//             }
-//         }
-//         tempArray.push(temp);
-//         temp = "";
-//         array.push(tempArray);
-//     }
-//     return array;
-// }
-// function productSearch(arr, keyword) {
-//     // tulis kode disini
-//     // gunakan function manualSplit dsini
-//     let newArray = manualSplit(arr)
-//     let output = [];
-//     for (let i = 0; i < newArray.length; i++) {
-//         for (let j = 0; j < newArray[i].length; j++) {
-//             if (newArray[i][j] === keyword) {
-//                 output.push(newArray[i]);
-//                 continue;
-//             }
-//         }
-//     }
-//     let result = [];
-//     // let temp = "";
-//     for (let i = 0; i < output.length; i++) {
-//         temp = "";
-//         for (let j = 0; j < output[i].length; j++) {
-//             if (j === output[i].length - 1) {
-//                 temp += output[i][j];
-//                 result.push(temp)
-//             } else {
-//                 temp += output[i][j] + " ";
-//             }
-//         }
-//     }
-//     return result;
-// }
+  let totalScore = (score / exercise.length) * 10;
+  console.log(totalScore);
+  if (totalScore == 100) {
+    category = "Perfect";
+  }
+  if (totalScore >= 80) {
+    category = "Great";
+  }
+  if (totalScore >= 60) {
+    category = "Good";
+  } else {
+    category = "Bad";
+  }
 
-// // let products = ['minyak goreng', 'mie rebus', 'mie goreng', 'mie pedas', 'sirup jeruk', 'sirup mangga', 'kentang goreng', 'kentang goreng keju', 'keju slice', 'keju parut'];
-// let products = ['minyak goreng', 'mie rebus', 'mie goreng', 'mie pedas', 'sirup jeruk', 'sirup mangga', 'kentang goreng', 'kentang goreng keju', 'keju slice', 'keju parut', 'keju krispi toping keju' ];
-// // panggil function disini dan sesuaikan parameternya
-// console.log(productSearch(products, 'keju'));
-
-// let a = "abc";
-// let b = 123
-let c = {
-    test: "asdfsa"
+  console.log(
+    `Anda mendapatkan score ${score} / ${
+      exercise.length * 10
+    }. Presentase ${Math.floor(totalScore)}, Kategori : ${category}`
+  );
+} else {
+    console.log("Input yang anda masukkan tidak lengkap!");
 }
-// console.log(a+c);
 
+// let test = "Anda mendapatkan score 50 / 70. Persentase: 71%, Kategori : Good"
+// let result "Anda mendapatkan score 50 / 70. Presentase: 71%, Kategori : Good"
 
-console.log(c.hasOwnProperty("tesst"));
+// console.log(test === result)

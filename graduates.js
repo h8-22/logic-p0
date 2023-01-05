@@ -3,21 +3,23 @@ function graduates(students) {
   let obj = {};
   for (let i = 0; i < students.length; i++) {
     // if(obj.class[students[i]])
-    // console.log(students[i].class);
-    if(obj[students[i].class]){
-      obj[students[i].class].push({
-      name: students[i].name,
-      score: students[i].score
-      })
-    } else {
-      obj[students[i].class] = [{
-        name: students[i].name,
-        score: students[i].score
-      }]
+    console.log(students[i].name);
+    if (students[i].score >= 75) {
+      if (obj[students[i].class]) {
+        obj[students[i].class].push({
+          name: students[i].name,
+          score: students[i].score
+        })
+      } else {
+        obj[students[i].class] = [{
+          name: students[i].name,
+          score: students[i].score
+        }]
       }
     }
-    return obj
   }
+  return obj
+}
 
 console.log(
   graduates([

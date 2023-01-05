@@ -4,7 +4,6 @@ function getAnimals(arr) {
     let h = "";
     let o = "";
     for (let i = 0; i < arr.length; i++) {
-        console.log(i);
         if(arr[i][arr[i].length-1] === "K" && arr[i].length > k.length){
             k = arr[i]
         }
