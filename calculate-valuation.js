@@ -2,8 +2,8 @@ function calculateValuation(startUp) {
     // Your code here
     // let result = [min, max];
     // let a = 0;
-    let min = (startUp[1][0] + startUp[1][1] + startUp[1][2] + startUp[1][3])/4
-    let max = 0;
+    let min = Number.MIN_VALUE
+    let max = Number.MAX_VALUE
     for(let i = 1; i < startUp.length; i++){
         let tempTotal = 0; 
         for(let j = 0; j < startUp.length -1; j++){

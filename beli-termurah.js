@@ -1,49 +1,3 @@
-// var exercise = "<>";
-// var userInput = "<>";
-// let score = 99;
-// let category;
-
-// // Anda mendapatkan score 50 / 70. Persentase: 71%, Kategori : Good
-// // console.log(exercise.length);
-// // console.log(userInput.length);
-// // console.log(exercise.length === userInput.lenght);
-// if(exercise.length === userInput.length) {
-//   for (let i = 0; i < exercise.length; i++) {
-//     if (exercise[i] === userInput[i]) {
-//       score += 10;
-//     }
-//   }
-//   //   console.log("test");
-//   // }
-
-//   let totalScore = (score / exercise.length) * 10;
-//   console.log(totalScore);
-//   if (totalScore == 100) {
-//     category = "Perfect";
-//   }
-//   if (totalScore >= 80) {
-//     category = "Great";
-//   }
-//   if (totalScore >= 60) {
-//     category = "Good";
-//   } else {
-//     category = "Bad";
-//   }
-
-//   console.log(
-//     `Anda mendapatkan score ${score} / ${
-//       exercise.length * 10
-//     }. Presentase ${Math.floor(totalScore)}, Kategori : ${category}`
-//   );
-// } else {
-//     console.log("Input yang anda masukkan tidak lengkap!");
-// }
-
-// // let test = "Anda mendapatkan score 50 / 70. Persentase: 71%, Kategori : Good"
-// // let result "Anda mendapatkan score 50 / 70. Presentase: 71%, Kategori : Good"
-
-// // console.log(test === result)
-
 /*
 
 Seseorang  ingin membeli minuman-minuman karena kebetulan sedang ada promosi dengan diskon maksimal 40%.
@@ -99,8 +53,39 @@ function beliTermurah(toBuy) {
     ];
 
     
+    let cheapest = Number.MAX_VALUE
+    let index = 0; 
+    // console.log(sellers[0]["items"][0]["price"]);
+    console.log(sellers[0]["items"][2]["name"] === toBuy);
+    for (let i = 0; i < sellers.length; i++) {
+        for (let j = 0; j < sellers[i]["items"].length; j++) {
+            // const element = sellers["items"][j];
+            let total = 0;
+            if(sellers[i]["items"][j]["name"] === toBuy){
+                total = sellers[i]["items"][j]["price"] * (1 - sellers[i]["discount"]);
+                if(total < cheapest){
+                    cheapest = total;
+                    index = i;
+                }
+            }
+        }
+    }
+    let store = sellers[index]["seller"]
+    return `${toBuy} bisa dibeli dengan harga paling murah ${cheapest} di ${store} `;
 }
 
-// let a = Number.MAX_VALUE
-// console.log(a*0);
-console.log(Number.MIN_VALUE);
+
+console.log(beliTermurah("Star Big Boba"));
+// Star Big Boba bisa dibeli dengan harga paling murah 16200 di Kokumi
+
+/*
+Star Big Boba
+
+BobaFett => 25000 - 15% = 21250
+BobaFest => 25000 - 35% = 16250
+ChaTime => 21000 - 10% = 18900
+Kokumi => 27000 - 40% = 16200 <-- termurah
+
+expected: 
+Star Big Boba bisa dibeli dengan harga paling murah 16200 di Kokumi
+*/
