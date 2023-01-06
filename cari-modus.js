@@ -7,10 +7,26 @@ function cariModus(arr) {
             obj[arr[i]] = 1
         }
     }
-    console.log(obj);
-    for (i,keys in obj) {
-        console.log(keys);
+    let mode = Number.MIN_VALUE
+    let num = 0;
+    let flag = true;
+    let test = obj[arr[0]]
+    for (i in obj) {
+        if(obj[i] > mode){
+            mode = obj[i];
+            num = i;
+        }
+
+        if(obj[i] !== test){
+            flag = false;
+        }
+        test = obj[i];
     }
+    if(flag == true ){
+        return -1;
+    }
+    
+    return num; 
 }
 
-console.log(cariModus([10, 4, 5, 2, 4])); //4
+console.log(cariModus([10, 4, 5, 2])); //4

@@ -159,7 +159,7 @@ function reward(data) {
     NoReward: []
   }
 
-  for (let i = 0; i < distance.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     if (distance[i] >= 50 && money[i] >= 100000) {
       result["Rumah"].push(data[i]["name"]);
     } else if (distance[i] >= 20 && distance[i] <= 49 && money[i] >= 50000  && money[i] <= 99000) {
