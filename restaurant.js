@@ -46,8 +46,15 @@ function restaurant(customers) {
     for (let i = 0; i < customers.length; i++) {
       const customer = customers[i];
       // console.log(customer);
-      console.log(menu[customer.orders[0]])
+    //   console.log(menu[customer.orders[0]]["price"])
       let sum = 0; 
+      for (let j = 0; j < customers[i]["orders"].length; j++) {
+        const order = customers[i]["orders"][j];
+        console.log(order);
+        sum += menu[order]
+        console.log(sum);
+        
+      }
       
       let obj = {
         name: customer.name,
@@ -100,18 +107,18 @@ console.log(restaurant([
   }
 ] */
 
-console.log(restaurant([{
-    name: 'Ayu',
-    bornYear: '1999',
-    studentCard: true,
-    orders: ['goldenChicken', 'kentangGoreng']
-},
-{
-    name: 'Iqbal',
-    bornYear: '1997',
-    studentCard: false,
-    orders: ['yaminAsin']
-}]))
+// console.log(restaurant([{
+//     name: 'Ayu',
+//     bornYear: '1999',
+//     studentCard: true,
+//     orders: ['goldenChicken', 'kentangGoreng']
+// },
+// {
+//     name: 'Iqbal',
+//     bornYear: '1997',
+//     studentCard: false,
+//     orders: ['yaminAsin']
+// }]))
 /*
 [
   {
