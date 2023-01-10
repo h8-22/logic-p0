@@ -79,6 +79,9 @@ function filteringHobbies(hobbies, number) {
                 perFavHobby.note = 'this hobby is popular among young people'
             }
 
+            //add delete object "total age" feature
+            delete perFavHobby["totalAge"]
+
             result.push(perFavHobby);
         }
     }
@@ -158,6 +161,27 @@ FIXED
   }
 ]
 */
+
+// Tambahkan fitur!
+
+// Tambahkan sebuah fitur proses untuk menghapus property totalAge 
+// Pada setiap object yang di hasilkan generateHobbyEntity
+
+// Output :
+// [
+//     {
+//         name: 'Enjoying Meme',
+//         people: [ 'Basil', 'Zul Fikar', 'Alexander' ],
+//         averageAge: 23.666666666666668,
+//         note: 'this hobby is popular among young people'
+//     },
+//     {
+//         name: 'Cooking',
+//         people: [ 'Damian Stapelkamp', 'Arthur', 'Eddy Chen', 'Kosasih' ],
+//         averageAge: 45.25,
+//         note: 'this hobby is popular among old people'
+//     }
+// ]
 
 module.exports = {
     createArrayOfObject,
