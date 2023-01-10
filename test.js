@@ -105,5 +105,10 @@
 // // console.log(a*0);
 // console.log(Number.MIN_VALUE);
 
-let a = ["Enjoying Meme, Cooking"];
-console.log(a.length);
+// let a = ["Enjoying Meme, Cooking"];
+
+let a = false;
+let b = false;
+if(a&&b){
+    console.log("test");
+}

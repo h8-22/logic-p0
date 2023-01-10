@@ -10,7 +10,7 @@ function createArrayOfObject(array) {
     let arr = [];
     let obj = {};
     // return result;
-    // obj.test = "asfd"
+    // obj.test = "asfd"        
     // console.log(obj);
     for (let i = 0; i < array.length; i++) {
         // console.log(i);
