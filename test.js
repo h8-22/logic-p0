@@ -107,8 +107,34 @@
 
 // let a = ["Enjoying Meme, Cooking"];
 
-let a = false;
-let b = false;
-if(a&&b){
-    console.log("test");
-}
+// let a = false;
+// let b = false;
+// if(a&&b){
+//     console.log("test");
+// }
+
+/*looping pertama 
+andre.
+    looping kedua
+    marsya
+        looping ketiga
+        expectation dari andre match apa engga sama traits punya marsya. 
+        let flag = true
+        looping keempat
+        expectation dari marsya match apa engga sama traits punya andre. 
+        let flag2 = true;
+    flag1 flag2 -> push nama;
+
+
+
+*/
+
+
+// console.log(tinderMatch([
+//     { name: 'Andre', gender: 'Men', traits: ['Dewasa', 'Tampan'], expectation: ['Cantik', 'Jujur', 'Kaya'] },
+//     { name: 'Marsya', gender: 'Women', traits: ['Cantik', 'Kaya'], expectation: ['Kaya', 'Olahragawan'] },
+//     { name: 'Dimas', gender: 'Men', traits: ['Pintar', 'Kaya'], expectation: ['Cantik', 'Pintar'] },
+//     { name: 'Bella', gender: 'Women', traits: ['Cantik', 'Pintar'], expectation: ['Pintar', 'Jujur'] },
+//     { name: 'Derpina', gender: 'Women', traits: ['Cantik', 'Sederhana', 'Rajin'], expectation: ['Pintar', 'Jujur', 'Baik'] },
+//     // { name: 'Hitler', gender: 'Man', traits: ['Tampan', 'Kaya'], expectation: ['Cantik'] }
+// ]))
